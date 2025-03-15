@@ -1,46 +1,50 @@
 # Alpha Alternator
 
 ## Introduction
-The **Alpha Alternator** is a novel generative model designed for time-dependent data, dynamically adapting to the complexity introduced by varying noise levels in sequences. Unlike state-of-the-art dynamical models such as Mamba, which assume uniform noisiness across sequences, the Alpha Alternator utilizes the **Vendi Score (VS)** to adjust the influence of sequence elements on predicted future dynamics at each time step.
+The **Alpha Alternator** is a novel generative model designed for time-dependent data, dynamically adapting to varying noise levels in sequences. Unlike state-of-the-art dynamical models such as Mamba, which assume uniform noise across sequences, the Alpha Alternator leverages the **Vendi Score (VS)** to adaptively adjust the influence of sequence elements on predicted future dynamics at each time step.
 
-![The $\alpha$-Alternator is robust to varying noise levels compared to a Mamba and an Alternator. The Alternator is more robust to noise than the Mamba.](./assets/figure_1.png)
+![Alpha Alternator Noise Robustness](./assets/figure_1.png)
 
 ## Key Features
-- **Dynamic Noise Adaptation**: Adjusts reliance on input sequences versus latent history based on a learned parameter.
-- **Vendi Score (VS) Integration**: Uses a similarity-based diversity metric to determine the informativeness of sequence elements.
-- **Alternator Loss Minimization**: Optimizes model robustness through a combination of observation masking and loss minimization.
-- **Robustness to Noisy Data**: Learns to differentiate between noisy and informative sequence elements for improved predictions.
-- **Superior Performance**: Outperforms Alternators and state-space models in **trajectory prediction, imputation, and forecasting** tasks.
+- **Adaptive Noise Handling**: Dynamically balances reliance on input sequences and latent history based on learned parameters.
+- **Vendi Score (VS) Integration**: Uses a similarity-based diversity metric to assess sequence informativeness.
+- **Alternator Loss Optimization**: Enhances robustness through observation masking and targeted loss minimization.
+- **Superior Performance**: Outperforms state-space models and Alternators in **trajectory prediction, imputation, and forecasting**.
 
 ## Methodology
-The Alpha Alternator adjusts its prediction strategy based on a learned parameter:
-- **Negative Parameter**: Indicates a noisy dataset; the model prioritizes latent history over individual sequence elements that increase VS.
-- **Positive Parameter**: Suggests an informative dataset; the model prioritizes new inputs that increase VS over latent history.
+The Alpha Alternator dynamically adjusts its prediction strategy based on a learned parameter:
+- **Negative Values**: Indicate a noisy dataset; the model prioritizes latent history over sequence elements that increase VS.
+- **Positive Values**: Indicate informative sequences; the model prioritizes new inputs that enhance VS.
 
-Training involves **observation masking** to simulate varying noise levels and **Alternator loss minimization** to enhance robustness.
+Training involves **observation masking** to simulate diverse noise levels and **Alternator loss minimization** to improve model resilience.
 
 ## Installation
-To set up the environment for running the Alpha Alternator model, install the necessary dependencies:
+To set up the environment, install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
+### Monash and Neural Datasets
+The datasets used in this research can be downloaded from:
+- [Monash Datasets](https://github.com/wzhwzhwzh0921/S-D-Mamba/releases/download/datasets/S-Mamba_datasets.zip)
+- [Full Dataset (Motor Cortex, Somatosensory Cortex, Hippocampus)](https://www.dropbox.com/sh/n4924ipcfjqc0t6/AACPWjxDKPEzQiXKUUFriFkJa?dl=0)
+
+These datasets are available in both MATLAB and Python formats.
 
 ## Results
-Our experimental results show that the Alpha Alternator achieves state-of-the-art performance in **neural decoding and time-series forecasting** benchmarks, surpassing existing Alternators and state-space models.
+Experimental results demonstrate that the Alpha Alternator achieves **state-of-the-art performance** in **neural decoding and time-series forecasting**, surpassing existing Alternators and state-space models.
 
 ## Citation
 If you use the Alpha Alternator model in your research, please cite:
 ```bibtex
 @article{rezaei2025alpha,
-  title={The Alpha-Alternator: Dynamic Adaptation To Varying Noise Levels In Sequences Using The Vendi Score For Improved Robustness and Performance},
-  author={Rezaei, Mohammad Reza and Dieng, Adji Bousso},
+  title={The Alpha Alternator: Dynamic Adaptation to Varying Noise Levels in Sequences Using the Vendi Score for Improved Robustness and Performance},
+  author={Rezaei, Mohammad R. and Dieng, Adji Bousso},
   journal={arXiv preprint arXiv:2502.04593},
   year={2025}
 }
 ```
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
+This project is licensed under the MIT License. See the LICENSE file for details.
 
