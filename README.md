@@ -30,14 +30,11 @@ Our experimental results show that the Alpha Alternator achieves state-of-the-ar
 ## Citation
 If you use the Alpha Alternator model in your research, please cite:
 ```bibtex
-@article{alpha_alternator,
-  author    = {Your Name and Collaborators},
-  title     = {Alpha Alternator: Adaptive Generative Model for Noisy Time-Series Data},
-  journal   = {Journal Name},
-  year      = {202X},
-  volume    = {X},
-  number    = {X},
-  pages     = {XX-XX}
+@article{rezaei2025alpha,
+  title={The $$\backslash$alpha $-Alternator: Dynamic Adaptation To Varying Noise Levels In Sequences Using The Vendi Score For Improved Robustness and Performance},
+  author={Rezaei, Mohammad Reza and Dieng, Adji Bousso},
+  journal={arXiv preprint arXiv:2502.04593},
+  year={2025}
 }
 ```
 
