@@ -31,7 +31,7 @@ Our experimental results show that the Alpha Alternator achieves state-of-the-ar
 If you use the Alpha Alternator model in your research, please cite:
 ```bibtex
 @article{rezaei2025alpha,
-  title={The $$\backslash$alpha $-Alternator: Dynamic Adaptation To Varying Noise Levels In Sequences Using The Vendi Score For Improved Robustness and Performance},
+  title={The $\alpha$-Alternator: Dynamic Adaptation To Varying Noise Levels In Sequences Using The Vendi Score For Improved Robustness and Performance},
   author={Rezaei, Mohammad Reza and Dieng, Adji Bousso},
   journal={arXiv preprint arXiv:2502.04593},
   year={2025}
