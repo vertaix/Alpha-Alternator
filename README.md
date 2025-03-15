@@ -12,9 +12,7 @@ The **Alpha Alternator** is a novel generative model designed for time-dependent
 - **Superior Performance**: Outperforms state-space models and Alternators in **trajectory prediction, imputation, and forecasting**.
 
 ## Methodology
-The Alpha Alternator dynamically adjusts its prediction strategy based on a learned parameter:
-- **Negative Values**: Indicate a noisy dataset; the model prioritizes latent history over sequence elements that increase VS.
-- **Positive Values**: Indicate informative sequences; the model prioritizes new inputs that enhance VS.
+The Alpha Alternator dynamically adjusts its prediction strategy based on a learned parameter.
 
 Training involves **observation masking** to simulate diverse noise levels and **Alternator loss minimization** to improve model resilience.
 
