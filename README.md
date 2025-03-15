@@ -3,6 +3,8 @@
 ## Introduction
 The **Alpha Alternator** is a novel generative model designed for time-dependent data, dynamically adapting to the complexity introduced by varying noise levels in sequences. Unlike state-of-the-art dynamical models such as Mamba, which assume uniform noisiness across sequences, the Alpha Alternator utilizes the **Vendi Score (VS)** to adjust the influence of sequence elements on predicted future dynamics at each time step.
 
+![The $\alpha$-Alternator is robust to varying noise levels compared to a Mamba and an Alternator. The Alternator is more robust to noise than the Mamba.](./assets/figure_1.png)
+
 ## Key Features
 - **Dynamic Noise Adaptation**: Adjusts reliance on input sequences versus latent history based on a learned parameter.
 - **Vendi Score (VS) Integration**: Uses a similarity-based diversity metric to determine the informativeness of sequence elements.
