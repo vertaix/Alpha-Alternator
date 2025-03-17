@@ -1,7 +1,11 @@
-# Alpha Alternator [![arXiv](https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv)](https://www.arxiv.org/abs/2502.04593)
+<p align="center">
+  <strong>Alpha Alternator</strong> <br>
+  <a href="https://www.arxiv.org/abs/2502.04593">
+    <img src="https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv" alt="arXiv">
+  </a>
+</p>
 
 
-## Introduction
 The **Alpha Alternator** is a novel generative model designed for time-dependent data, dynamically adapting to varying noise levels in sequences. Unlike state-of-the-art dynamical models such as Mamba, which assume uniform noise across sequences, the Alpha Alternator leverages the **Vendi Score (VS)** to adaptively adjust the influence of sequence elements on predicted future dynamics at each time step.
 
 ![Alpha Alternator Noise Robustness](./assets/figure_1.png)
