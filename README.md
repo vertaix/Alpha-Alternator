@@ -1,4 +1,4 @@
-# Alpha Alternator [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://www.arxiv.org/abs/2502.04593)
+# Alpha Alternator [![arXiv](https://img.shields.io/badge/arXiv-Paper-red?logo=arxiv)](https://www.arxiv.org/abs/2502.04593)
 
 
 ## Introduction
